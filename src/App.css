@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -76,6 +77,17 @@ body {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(5px);
+  height: 70px; /* Fixed height for navbar */
+}
+
+/* Section Padding for Fixed Navbar */
+section {
+  scroll-margin-top: 70px; /* Same as navbar height */
+  padding-top: 70px; /* Add padding to prevent content from being hidden under navbar */
+}
+
+#home {
+  padding-top: 0; /* Remove padding for home section since it's full height */
 }
 
 .nav-content {
@@ -107,17 +119,22 @@ body {
   transition: all 0.3s ease;
   position: relative;
   white-space: nowrap;
+  padding: 5px 0;
 }
 
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
   background-color: #e9546b;
   transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e9546b;
 }
 
 .nav-links a:hover::after {
@@ -187,11 +204,15 @@ body {
   transition: all 0.3s ease;
   animation: fadeIn 1s ease-out 1s both;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background-color: #e9546b;
+  color: white;
 }
 
 /* Features Section */
@@ -327,5 +348,44 @@ body {
 
   .logo, .nav-links a {
     font-size: 0.9rem;
+  }
+}
+
+/* Itinerary Table Styles */
+.MuiTableContainer-root {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 15px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  background-color: #e9546b;
+  color: white;
+  font-weight: bold;
+}
+
+.MuiTableBody-root .MuiTableRow-root:hover {
+  background-color: rgba(233, 84, 107, 0.05);
+}
+
+.MuiTableCell-root {
+  border-bottom: 1px solid rgba(233, 84, 107, 0.2) !important;
+}
+
+.MuiTextField-root, .MuiSelect-root {
+  background-color: white;
+  border-radius: 4px;
+}
+
+/* Make sure the table page has proper padding on mobile */
+@media (max-width: 768px) {
+  .MuiBox-root {
+    padding: 1rem !important;
+  }
+  
+  .MuiTableContainer-root {
+    margin-top: 70px;
   }
 }
