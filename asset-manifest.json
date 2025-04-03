@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/github-pages-website/static/css/main.9df6a5ce.css",
-    "main.js": "/github-pages-website/static/js/main.d1ba49d4.js",
-    "static/js/453.bbd1f349.chunk.js": "/github-pages-website/static/js/453.bbd1f349.chunk.js",
-    "index.html": "/github-pages-website/index.html",
-    "main.9df6a5ce.css.map": "/github-pages-website/static/css/main.9df6a5ce.css.map",
-    "main.d1ba49d4.js.map": "/github-pages-website/static/js/main.d1ba49d4.js.map",
-    "453.bbd1f349.chunk.js.map": "/github-pages-website/static/js/453.bbd1f349.chunk.js.map"
+    "main.css": "/cursor-rontest/static/css/main.9df6a5ce.css",
+    "main.js": "/cursor-rontest/static/js/main.291c5f88.js",
+    "static/js/453.bbd1f349.chunk.js": "/cursor-rontest/static/js/453.bbd1f349.chunk.js",
+    "index.html": "/cursor-rontest/index.html",
+    "main.9df6a5ce.css.map": "/cursor-rontest/static/css/main.9df6a5ce.css.map",
+    "main.291c5f88.js.map": "/cursor-rontest/static/js/main.291c5f88.js.map",
+    "453.bbd1f349.chunk.js.map": "/cursor-rontest/static/js/453.bbd1f349.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9df6a5ce.css",
-    "static/js/main.d1ba49d4.js"
+    "static/js/main.291c5f88.js"
   ]
 }
